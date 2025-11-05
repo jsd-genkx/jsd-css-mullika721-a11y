@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-	--color-primary: #0d4663;
+	--color-primary: #0d4663;	/* -- คือ variables */
 	--color-secondary: #135492;
 	--color-accent: #ff9a88;
 
@@ -22,14 +22,14 @@ body {
 
 .container {
 	width: 100%;
-	min-height: 100dvh;
-	/* display: grid; */
-	/* grid-template-rows: auto 1fr auto; */
-	/* grid-template-columns: 30ch 1fr; */
-	/* grid-template-areas:
+	min-height: 100dvh; 
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 30ch 1fr;
+	grid-template-areas:
 		"header header"
-		"main main"
-		"footer footer"; */
+		"aside main"
+		"footer footer";
 }
 
 section {
@@ -45,27 +45,27 @@ header {
 	background-color: var(--color-primary);
 	color: var(--color-white);
 
-	/* grid-area: header; */
+	grid-area: header;
 }
 
 main {
 	color: var(--color-black);
 	background-color: var(--color-accent);
 
-	/* grid-area: main; */
+	grid-area: main;
 }
 
 aside {
 	color: var(--color-white);
 	background-color: var(--color-black);
-  display: none;
+  	/* display: none; */
 
-	/* grid-area: aside; */
+	grid-area: aside;
 }
 
 footer {
 	background-color: var(--color-secondary);
 	color: var(--color-white);
 
-	/* grid-area: footer; */
+	grid-area: footer;
 }
